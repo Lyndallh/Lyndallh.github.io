@@ -77,7 +77,7 @@ small, .text_small {font-size: 0.6rem;}
 
 /* My test code */
 html {
-    background-color: white;
+    background-color: yellowgreen;
     color: hotpink;
 }
 header{ 
@@ -156,34 +156,48 @@ nav {
     padding: 20px;
 }
 
-#bio h4 {
+h4 {
     color: var(--black);
 }
 
 h3 {
     color: var(--darkblue);
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-#projects{
+#projects{  
+    background-color:var(--lightblue) ;
+    }
+h2{
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+h2{
+    color: var(--black);
+}
+
+#projects-box{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     min-height: fit-content;
     padding:20px;
-    background-color:var(--lightblue) ;
-
-    }
+    }    
 
 
-#blog{
+#blog-box{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     padding:20px;
-    background-color: var(--teal-light)
+    }
+#blog{  
+    background-color: var(--sand)
 
     }
 
@@ -193,16 +207,12 @@ h3 {
     justify-content: flex-start;
     align-items: center;
     padding:20px;
-    background-color: var(--sand);
+    background-color: var(--darkblue);
 
     }
 
     /*Meda Queries*/
-    @media (min-width: 769px) {
-
-
-
-        
+    @media (min-width: 769px) {    
     
         nav {
             float: right;
@@ -274,7 +284,7 @@ h3 {
             justify-content: space-between;
             
         }
-      #projects{
+      #projects-box, #blog-box{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -283,12 +293,12 @@ h3 {
         flex-wrap: wrap;
       }
 
-      .project{
-        width: 25%;
+      .project, .blog-post{
+        width: 30%;
         
       }
-      .project img{
-      height: 50v;
+      .project img, .blog-post img{
+      max-height: 200px;
       }
     }   
     
