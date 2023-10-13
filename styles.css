@@ -1,0 +1,297 @@
+/* "CSS Reset"  */
+@import url('https://fonts.googleapis.com/css?family=Inter:400|Milonga:400|Oswald:300|Karma:600');
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+ol, ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+:root {
+  --black: #2A2935;
+  --darkblue: #274574;
+  --teal-dark: #086E8D;
+  --teal-light: #93C6D3;
+  --lightblue: #EAFCFB;
+  --sand: #E9E3DE;
+
+/*  inherited colors  */
+  --text: var(--color1);
+}
+
+/* set default font style here */
+html, body{
+  font-size:18px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* Add Heading styles here  */
+h1 {  
+  margin-top: 0;
+  font-size: 2.488rem;
+  font-family: 'Milonga', sans-serif;
+
+}
+h2 {
+  font-size: 2.074rem;
+   font-family: 'Karma', serif; 
+}
+h3 {
+  font-size: 1.728rem;
+    font-family: 'Oswald', sans-serif;
+  text-transform: uppercase
+
+}
+h4 {
+  font-size: 1.44rem;
+}
+h5{
+  font-size: 1.2rem;
+
+}
+h6{
+  font-size: 0.833rem;
+
+}
+
+
+small, .text_small {font-size: 0.6rem;}
+
+
+/* My test code */
+html {
+    background-color: white;
+    color: hotpink;
+}
+header{ 
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    color: var(--sand);
+    background-color: var(--darkblue);
+    font-size: 1.728rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase
+    /* i'd like to flex zombie only the logo here */
+}
+
+#logo{
+        height: 100px;    
+        margin: 10px;
+        display: inline-block;
+        }
+
+a {
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0 10px;
+    }
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 3;
+
+}
+
+.menu{color: #EAFCFB;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 1px;
+    padding: 10px;
+    
+}
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--teal-dark);
+ 
+    }
+#hero-text {
+    text-align: center;
+}
+
+#hero h1{ 
+    text-justify: center;
+    color: var(--sand);
+    padding: 20px;
+}
+#hero h2{ color: var(--lightblue);
+    padding: 10px;
+}
+
+#bio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: fit-content;
+    padding:20px;
+    background-color:var(--teal-light);
+    }
+
+.abc{
+    padding: 20px;
+}
+
+#bio h4 {
+    color: var(--black);
+}
+
+h3 {
+    color: var(--darkblue);
+    margin-bottom: 10px;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: fit-content;
+    padding:20px;
+    background-color:var(--lightblue) ;
+
+    }
+
+
+#blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding:20px;
+    background-color: var(--teal-light)
+
+    }
+
+#contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding:20px;
+    background-color: var(--sand);
+
+    }
+
+    /*Meda Queries*/
+    @media (min-width: 769px) {
+
+
+
+        
+    
+        nav {
+            float: right;
+        }
+    
+    
+        #header-text {
+            width: 50%;
+        }
+    
+        .column {
+            padding: 2%;
+        }
+
+        #columns {
+            
+            flex-direction: row;
+        }
+
+        #column-1, #column-3 {
+            width: 33%;
+        }
+    
+        #column-2 {
+            /* Did you spot the problem we are solving here last week? 33% times 3only equals 99%! */
+            width: 34%;
+        }
+            
+        h1 {
+                    font-size: 2.5rem;
+        }
+
+        form{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items:center;
+            flex-wrap: wrap;
+        }
+        table{
+            max-width:769px;
+        }
+
+/* This is my media query code */
+        #hero {  
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: fit-content;
+        
+        }
+
+        #hero img {
+            max-width: 30%;
+            height: auto;
+            align-self: flex-start;
+            
+        } 
+        
+#hero-text{
+    flex-grow: 2;
+}
+
+        #hero-text {   
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+      #projects{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        min-height: fit-content;
+        flex-wrap: wrap;
+      }
+
+      .project{
+        width: 25%;
+        
+      }
+      .project img{
+      height: 50v;
+      }
+    }   
+    
+
+ 
+    
