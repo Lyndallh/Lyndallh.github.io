@@ -243,9 +243,12 @@ footer{
 }
 
 footer{
-    color: var(--sand);
     text-align: center;
     height: 120px;
+}
+
+footer p{
+    color: var(--sand);
 }
 
 /* Contact Styling */
@@ -256,8 +259,8 @@ form{
     align-items:flex-start;
     flex-wrap: wrap;
 }
-  /*Contact us Table Layout*/ 
 
+/*Contact us Table Layout*/ 
   table{
     width:100%;
 }
