@@ -77,12 +77,11 @@ small, .text_small {font-size: 0.6rem;}
 
 /* My test code */
 html {
-    background-color: yellowgreen;
     color: hotpink;
 }
 header{ 
     display:flex;
-    flex-direction: row-reverse;
+    flex-direction: reverse;
     justify-content: space-between;
     color: var(--sand);
     background-color: var(--darkblue);
@@ -156,12 +155,15 @@ nav {
     padding:20px;
     background-color:var(--teal-light);
     }
-
+#abc-box{
+    max-width: 850px;    /* to keep to ~100 characters on width */
+    margin: auto;
+}
 .abc{
     padding: 20px;
 }
 
-h4 {
+p {
     color: var(--black);
 }
 
@@ -230,6 +232,71 @@ footer{
     color: var(--sand);
     text-align: center;
 }
+
+/* Contact Styling */
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:flex-start;
+    flex-wrap: wrap;
+}
+  /*Contact us Table Layout*/ 
+
+  table{
+    width:100%;
+}
+    .table-header{
+     
+        font-size: small;
+        font-weight: normal;
+        text-align: left;
+
+    }
+
+    .table-input-cell{
+        background-color: transparent;
+        border-color: black;
+        font-size: small;
+        font-weight: normal;
+        text-align: left;
+
+        vertical-align: top;
+    }
+
+input[type=submit] {
+    background-color:darkgray   ;
+    color: white;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 4px; /*line up exactly with the inside of the select cell*/
+    max-width: 50%;
+}
+input[type=submit]:hover {
+    background-color: grey;
+  }
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    height: 100%;
+    padding: 2px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 0; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  #subject{
+    height: 100%;
+    margin-bottom: 0;
+  }
+  #textarea{
+    height: min-content;
+  }
+
     /*Meda Queries*/
     @media (min-width: 769px) {    
     

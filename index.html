@@ -9,14 +9,15 @@
 </head>
 <body>
     <header>
-        <img id="logo" src="images/ABC-logo.png" >  <!-- Logo -->
+        <img id="logo" href="/index.html" src="images/ABC-logo.png" >  <!-- Logo -->
         <nav id="navigation"> <!-- Navigation -->
-            <a class="menu" href="">About</a>
-            <a class="menu" href="">Coding Projects</a>
-            <a class="menu" href="">Bike Blog</a>           
-            <a class="menu" href="">Contact</a>
+            <a class="menu" href="#bio">About</a>
+            <a class="menu" href="#projects">Coding Projects</a>
+            <a class="menu" href="#blog">Bike Blog</a>           
+            <a class="menu" href="/contact.html">Contact</a>
             
         </nav> 
+
     </header>
     <main>
         <section id="hero">
@@ -24,23 +25,28 @@
             <div id="hero-text">
                 <h1>Analytics < Bikes < Coding</h1>
                 <h2 id="hero-h2">Meet Lindi..<br>Data Analyst, Bike Enthusiast and Keen Coder</h2>
+                <a href="/contact.html">
+                    <h3>get in touch</h3>
+                </a>
+                
             </div>  
         </section>
         
         <section id="bio">
-            <a class="abc">
-                <h3>Analytics</h3>
-                <h4>I am an experienced Data Analyst with a passion for problem solving. I have always been fascinated by data and how I can use it to tell a story and provide a better understanding of complex problems to help make big decisions. I love the challenge of sifting through vast amounts of information to uncover hidden patterns and insights. </h4>
-            </a>
-            <a class="abc">
-                <h3>Bikes</h3>
-                <h4>I’m also passionate about bike riding. Whether it's for fun, for sport, for a healthier mind, body and planet, or for a deeper connection to surroundings and community, each pedal stroke brings me joy. Knowing the benefits of cycling, I'm a strong advocate for encouraging others to embrace cycling as a regular and rewarding activity.</h4>
-            </a>
-            <a class="abc">
-                <h3>Coding</h3>
-                <h4>I’m always looking for ways to improve my skills and stay on the cutting edge of technology. That's why I’ve started the She Codes Plus program to learn HTML/CSS, Javascript, Python, React, WordPress and Django. This is website serves as my portfolio of projects to showcase my new skills to the world.</h4>
-            </a>
-            <a href="">Learn More</a>
+            <div id="abc-box">
+                <a class="abc">
+                    <h3>Analytics</h3>
+                    <p>I am an experienced Data Analyst with a passion for problem solving. I have always been fascinated by data and how I can use it to tell a story and provide a better understanding of complex problems to help make big decisions. I love the challenge of sifting through vast amounts of information to uncover hidden patterns and insights. </p>
+                </a>
+                <a class="abc">
+                    <h3>Bikes</h3>
+                    <p>I’m also passionate about bike riding. Whether it's for fun, for sport, for a healthier mind, body and planet, or for a deeper connection to surroundings and community, each pedal stroke brings me joy. Knowing the benefits of cycling, I'm a strong advocate for encouraging others to embrace cycling as a regular and rewarding activity.</p>
+                </a>
+                <a class="abc">
+                    <h3>Coding</h3>
+                    <p>I’m always looking for ways to improve my skills and stay on the cutting edge of technology. That's why I’ve started the She Codes Plus program to learn HTML/CSS, Javascript, Python, React, WordPress and Django. This is website serves as my portfolio of projects to showcase my new skills to the world.</p>
+                </a>
+            </div>
         </section>
         <section id="projects">
             <h2>Projects</h2>
@@ -73,32 +79,29 @@
                 <a class="blog-post" href="https://www.yourmove.org.au/st-augustines-school/stacc-x-stanc-weekly-bike-games/" target="_blank"> 
                     <h3>STANC x STACC = Weekly Bike Games</h3>
                     <img src="images/ym-stacc.png">
-                    <h4>Opens in a new window</h4> 
+                    <p>Opens in a new window</p> 
                 </a>
                 <a class="blog-post" href="https://www.yourmove.org.au/st-augustines-school/2023-wa-mtb-school-series-achievements/" target="_blank"> 
                     <h3>2023 WA MTB School Series Achievements</h3>
                     <img src="images/ym-mtbseries.png">
-                    <h4>Opens in a new window</h4>            
+                    <p>Opens in a new window</p>            
                 </a>
         </section>
-        <section id="contact">
-            <h2>Get in touch</h2>
-<!-- Table here -->
-            <div id="socials-box">
-                <a class="socials" href="https://github.com/Lyndallh/Lyndallh.github.io" target="_blank"> 
 
-                    <img src="images/github.png">
-
-                </a>
-                <a class="socials" href="https://www.linkedin.com/in/lindi-harding-5280b445/" target="_blank"> 
-
-                    <img src="images/linkedin.png">
-          
-                </a>
-            </div>
-        </section>
     </main>
     <footer>
+        <div id="socials-box">
+            <a class="socials" href="https://github.com/Lyndallh/Lyndallh.github.io" target="_blank"> 
+
+                <img src="images/github.png">
+
+            </a>
+            <a class="socials" href="https://www.linkedin.com/in/lindi-harding-5280b445/" target="_blank"> 
+
+                <img src="images/linkedin.png">
+
+            </a>
+        </div>
         <p>Copyright - Lindi Harding 2023</p>
     </footer>
 </body>

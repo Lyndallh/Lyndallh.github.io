@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="styles.css">
+        <title>ABC - Lindi Harding</title>
+
+    </head>
+    <body>
+        <header>
+            <img id="logo" href="/index.html" src="images/ABC-logo.png" > <!-- Logo -->
+            <nav id="navigation"> <!-- Navigation -->
+                <a class="menu" href="/index.html#bio">About</a>
+                <a class="menu" href="/index.html#projects">Coding Projects</a>
+                <a class="menu" href="/index.html#blog">Bike Blog</a>           
+                <a class="menu" href="/contact.html">Contact</a>
+            </nav> 
+
+        </header>
+     
+        <main>      
+            <section id = "contact">       
+                
+                <h2> Got a question? </h2> <!-- adding the form again but as a table -->
+                
+                <form id = "form">
+                    <table> <!--create a table-->
+                        <tr> <!-- create a new table row -->
+                            <th class = "table-header">      
+                                <label for="yourname">Name</label>  <!-- name each of the table headings -->  
+                            </th> 
+                            
+                            <th class = "table-header">     
+                                <label for="subject">How can I help you?</label>        <!-- name each of the table headings --> 
+                            </th> 
+                        </tr>
+                        <tr>    <!-- create a new table row -->
+                            
+                            <td  class = "table-input-cell">  
+                                <input type="text" id="yourname" name="yourname" class = "response">  <!--add the content of each cell in the new row-->                
+                            </td> 
+                            
+                            <td id = "subject" rowspan="5" class = "table-input-cell"> 
+                                <textarea id="textarea" name="subject" rows = "5"></textarea>    
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <th class = "table-header">    
+                                <label for="city">What's piqued your interest?</label>      <!-- name each of the table headings -->    
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class = "table-input-cell">  
+                                <select id="city" name="city" class = "response"> 
+                                    <option value="blank"></option>
+                                    <option value="analytics">Analytics</option>
+                                    <option value="bikes">Bikes</option>
+                                    <option value="coding">Coding</option>
+                                    <option value="other">Other</option>                      
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Submit"> 
+                </form>
+            
+            </section>
+        </main>
+        <footer>
+            <div id="socials-box">
+                <a class="socials" href="https://github.com/Lyndallh/Lyndallh.github.io" target="_blank"> 
+    
+                    <img src="images/github.png">
+    
+                </a>
+                <a class="socials" href="https://www.linkedin.com/in/lindi-harding-5280b445/" target="_blank"> 
+    
+                    <img src="images/linkedin.png">
+    
+                </a>
+            </div>
+            <p>Copyright - Lindi Harding 2023</p>
+        </footer>
+    </body>
+</html>
