@@ -6,17 +6,21 @@ html {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
 }
+
 ol, ul {
     list-style: none;
 }
+
 img {
     max-width: 100%;
     height: auto;
@@ -31,7 +35,7 @@ img {
   --sand: #E9E3DE;
 
 /*  inherited colors  */
-  --text: var(--color1);
+  --text: #2A2935;
 }
 
 /* set default font style here */
@@ -39,90 +43,93 @@ html, body{
   font-size:18px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.4;
+  background-color: var(--darkblue);
 }
 
 /* Add Heading styles here  */
 h1 {  
-  margin-top: 0;
-  font-size: 2.488rem;
-  font-family: 'Milonga', sans-serif;
-
+    margin-top: 0;
+    font-size: 2.488rem;
+    font-family: 'Milonga', sans-serif;
 }
+
 h2 {
-  font-size: 2.074rem;
-   font-family: 'Karma', serif; 
+    font-size: 2.074rem;
+    font-family: 'Karma', serif; 
 }
+
 h3 {
-  font-size: 1.728rem;
+    font-size: 1.728rem;
     font-family: 'Oswald', sans-serif;
-  text-transform: uppercase
-
+    text-transform: uppercase
 }
+
 h4 {
-  font-size: 1.44rem;
+    font-size: 1.44rem;
 }
+
 h5{
-  font-size: 1.2rem;
-
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
 }
+
 h6{
-  font-size: 0.833rem;
-
+    font-size: 0.833rem;
 }
-
 
 small, .text_small {font-size: 0.6rem;}
 
+/*  site code */
 
-/* My test code */
 html {
     color: hotpink;
 }
 header{ 
     display:flex;
-    flex-direction: reverse;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     color: var(--sand);
-    background-color: var(--darkblue);
-    font-size: 1.728rem;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase
-    /* i'd like to flex zombie only the logo here */
+    background-color: var(--darkblue);  
+    height:120px
 }
 
-section, footer{
-    min-height: fit-content;
-    padding: 5px;
+header h5{
+    color:var(--sand);
 }
 
 #logo{
-        height: 100px;    
-        margin: 10px;
-        display: inline-block;
-        }
+    height: 100px; 
+    max-width: 100px;
+    margin: auto;
+    display: inline-block;
+}
 
-a {
-    font-size: 1rem;
+a{
     text-decoration: none;
     margin: 0 10px;
     }
+
+#navigation{
+    align-self: stretch;
+}
+
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items:center;
     flex-wrap: wrap;
-    flex-grow: 3;
-
+}
+.menu{
+    margin: auto;
+    padding: 0 10px;
 }
 
-.menu{color: #EAFCFB;
-    font-size: 1rem;
-    text-decoration: none;
-    margin: 1px;
-    padding: 10px;
-    
+section{
+    min-height: fit-content;
 }
 
 #hero{
@@ -207,9 +214,16 @@ h2{
     background-color: var(--sand)
     }
 
-#contact, footer{
+footer{
     background-color: var(--darkblue); 
     color: var(--sand);
+    }
+
+#contact{
+    height: calc(100vh - 240px); /* to push the footer to the bottom (240px is header + footer) */
+    margin: auto;
+    color: var(--darkblue); 
+    background-color: var(--sand);
     }
 
 #contact h2{ color: var(--sand);
@@ -231,6 +245,7 @@ h2{
 footer{
     color: var(--sand);
     text-align: center;
+    height: 120px;
 }
 
 /* Contact Styling */
@@ -297,97 +312,70 @@ input[type=submit]:hover {
     height: min-content;
   }
 
-    /*Meda Queries*/
-    @media (min-width: 769px) {    
-    
-        nav {
-            float: right;
-        }
-    
-    
-        #header-text {
-            width: 50%;
-        }
-    
-        .column {
-            padding: 2%;
+/*Meda Queries*/
+@media (min-width: 769px) {    
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #logo{
+        width: auto;
         }
 
-        #columns {
-            
-            flex-direction: row;
-        }
+    #hero {  
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: fit-content;
+    }
 
-        #column-1, #column-3 {
-            width: 33%;
-        }
-    
-        #column-2 {
-            /* Did you spot the problem we are solving here last week? 33% times 3only equals 99%! */
-            width: 34%;
-        }
-            
-        h1 {
-                    font-size: 2.5rem;
-        }
-
-        form{
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items:center;
-            flex-wrap: wrap;
-        }
-        table{
-            max-width:769px;
-        }
-
-/* This is my media query code */
-        #hero {  
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            min-height: fit-content;
+    #hero img {
+        max-width: 30%;
+        height: auto;
+        align-self: flex-start;   
+    } 
         
-        }
+    #hero-text{
+        flex-grow: 2;
+    }
 
-        #hero img {
-            max-width: 30%;
-            height: auto;
-            align-self: flex-start;
-            
-        } 
-        
-#hero-text{
-    flex-grow: 2;
-}
+    #hero-text {   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;   
+    }
 
-        #hero-text {   
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            
-        }
-      #projects-box, #blog-box{
+    #projects-box, #blog-box{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         min-height: fit-content;
         flex-wrap: wrap;
-      }
+    }
 
-      .project, .blog-post{
+    .project, .blog-post{
         width: 30%;
-        
-      }
-      .project img, .blog-post img{
-      max-height: 200px;
-      }
-    }   
-    
+    }
 
- 
-    
+    .project img, .blog-post img{
+        max-height: 200px;
+    }
+      
+    form{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items:center;
+        flex-wrap: wrap;
+    }
+
+    table{
+        max-width:769px;
+    }
+}

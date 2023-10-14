@@ -9,64 +9,68 @@
     </head>
     <body>
         <header>
-            <img id="logo" href="/index.html" src="images/ABC-logo.png" > <!-- Logo -->
+            <a href="/index.html" ><img id = logo src="images/ABC-logo.png"> </a>  <!-- Logo -->
             <nav id="navigation"> <!-- Navigation -->
-                <a class="menu" href="/index.html#bio">About</a>
-                <a class="menu" href="/index.html#projects">Coding Projects</a>
-                <a class="menu" href="/index.html#blog">Bike Blog</a>           
-                <a class="menu" href="/contact.html">Contact</a>
+                <a class="menu" href="/index.html#bio"><h5>About</h5></a>
+                <a class="menu" href="/index.html#blog"><h5>Bike Blog</h5></a>           
+                <a class="menu" href="/index.html#projects"><h5>Coding Projects</h5></a>
+                <a class="menu" href="/contact.html"><h5>Contact</h5></a>
             </nav> 
 
         </header>
      
         <main>      
+           
             <section id = "contact">       
-                
-                <h2> Got a question? </h2> <!-- adding the form again but as a table -->
-                
-                <form id = "form">
-                    <table> <!--create a table-->
-                        <tr> <!-- create a new table row -->
-                            <th class = "table-header">      
-                                <label for="yourname">Name</label>  <!-- name each of the table headings -->  
-                            </th> 
-                            
-                            <th class = "table-header">     
-                                <label for="subject">How can I help you?</label>        <!-- name each of the table headings --> 
-                            </th> 
-                        </tr>
-                        <tr>    <!-- create a new table row -->
-                            
-                            <td  class = "table-input-cell">  
-                                <input type="text" id="yourname" name="yourname" class = "response">  <!--add the content of each cell in the new row-->                
-                            </td> 
-                            
-                            <td id = "subject" rowspan="5" class = "table-input-cell"> 
-                                <textarea id="textarea" name="subject" rows = "5"></textarea>    
-                            </td>
-                            
-                        </tr>
-                        <tr>
-                            <th class = "table-header">    
-                                <label for="city">What's piqued your interest?</label>      <!-- name each of the table headings -->    
-                            </th>
-                        </tr>
-                        <tr>
-                            <td class = "table-input-cell">  
-                                <select id="city" name="city" class = "response"> 
-                                    <option value="blank"></option>
-                                    <option value="analytics">Analytics</option>
-                                    <option value="bikes">Bikes</option>
-                                    <option value="coding">Coding</option>
-                                    <option value="other">Other</option>                      
-                                </select>
-                            </td>
-                        </tr>
-                    </table>
-                    <input type="submit" value="Submit"> 
-                </form>
-            
+                <div id ="contact-box">
+                    <h2> Got a question? </h2> <!-- adding the form again but as a table -->
+                    
+                    <form id = "form">
+                        <table> <!--create a table-->
+                            <tr> <!-- create a new table row -->
+                                <th class = "table-header">      
+                                    <label for="yourname">Name</label>  <!-- name each of the table headings -->  
+                                </th> 
+                                
+                                <th class = "table-header">     
+                                    <label for="subject">How can I help you?</label>        <!-- name each of the table headings --> 
+                                </th> 
+                            </tr>
+                            <tr>    <!-- create a new table row -->
+                                
+                                <td  class = "table-input-cell">  
+                                    <input type="text" id="yourname" name="yourname" class = "response">  <!--add the content of each cell in the new row-->                
+                                </td> 
+                                
+                                <td id = "subject" rowspan="5" class = "table-input-cell"> 
+                                    <textarea id="textarea" name="subject" rows = "5"></textarea>    
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <th class = "table-header">    
+                                    <label for="city">What's piqued your interest?</label>      <!-- name each of the table headings -->    
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class = "table-input-cell">  
+                                    <select id="city" name="city" class = "response"> 
+                                        <option value="blank"></option>
+                                        <option value="analytics">Analytics</option>
+                                        <option value="bikes">Bikes</option>
+                                        <option value="coding">Coding</option>
+                                        <option value="other">Other</option>                      
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="submit" value="Submit"> 
+                    </form>
+                </div>
+                <div id="constraints"></div>    
             </section>
+               
+          
         </main>
         <footer>
             <div id="socials-box">
