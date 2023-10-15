@@ -173,7 +173,7 @@ section{
 }
 
 #contact-link{
-    border-color: #2A2935;
+    border-color: var(--black);
     border: 1px solid;
     padding: 10px;  
     border-radius: 4px;
@@ -279,13 +279,13 @@ footer p{
 /* Contact section Styling */
 
 #contact{
-    height: calc(100vh - 240px); /* to push the footer to the bottom (240px is header + footer) */
+    min-height: calc(100vh - 240px); /* to push the footer to the bottom (240px is header + footer) */
     margin: auto;
     color: var(--darkblue); 
     background-color: var(--sand);
 }
 
-#contact h2{ color: var(--darkblue);
+#contact h1{ color: var(--darkblue);
 }
 
 form{
@@ -295,10 +295,14 @@ form{
     align-items:flex-start;
     flex-wrap: wrap;
 }
+#contact-box{
+    padding-top: 10px;
+}
 
 /*Contact us Table Layout*/ 
 #table{
     width:100%;
+    padding-top: 10px;
 }
 .table-header{
     
@@ -317,8 +321,8 @@ form{
 }
 
 input[type=submit] {
-    background-color:darkgray   ;
-    color: white;
+    background-color:var(--darkblue)   ;
+    color: var(--sand);
     box-sizing: border-box;
     padding: 12px 20px;
     border: none;
@@ -328,9 +332,6 @@ input[type=submit] {
     max-width: 50%;
 }
 
-input[type=submit]:hover {
-    background-color: grey;
-}
 
 input[type=text], select, textarea {
     width: 100%; /* Full width */
@@ -355,7 +356,7 @@ input[type=text], select, textarea {
 
 /* hover state styling */
 
-#contact-link:hover, .project img:hover, .blog-post img:hover{
+#contact-link:hover, .project img:hover, .blog-post img:hover, input[type=submit]:hover{
     box-shadow:  0 0 10px var(--sand),0 0 20px var(--black), 0 0 30px var(--darkblue);
 }
 
