@@ -1,11 +1,11 @@
-# {{ your_name_here }} - Portfolio Task
+Lindi Harding - Portfolio Task
 
 [My portfolio site]( https://Lyndallh.github.io )
 
 ## Project Requirements
 
 ### Content
-{{ Add a short paragraph describing the features below. }}
+I have used a profile picture of my children at the beach. It paints a picture of outdoor family fun and has my favourite colours. My biography decribes my professional development and my personal brand. My contact form sends me an email. Despit being a table and not having flex, it fits OK on a phone screen size as is it only 2 columns. I have used flex outside the table to make it look nice. My projects sections uses flex and has placeholders for suture projects and I have blended an additional projects section with links to external sites by including a 'bike blog' section, which looks like a projects section. This showcases my community volunteer active travel projects.
 
 - [ ] At least one profile picture
 - [ ] Biography (at least 100 words)
@@ -14,7 +14,7 @@
 - [ ] Links to external sites, e.g. GitHub and LinkedIn.
 
 ### Technical
-{{ Add a short paragraph describing the features below. }}
+I have included two web pages. One is the index and another is the contact form. In further development I would like to have new pages for each of my projects with a summary of the project. I have enjoyed understanding and practicing version control through github. I have used it to back out changes. I have used flex and media queries in all sections. I have included multiple device breakpoints. I have also used semantic hmtl where possible.
 
 - [ ] At least 2 web pages.
 - [ ] Version controlled with Git
@@ -23,17 +23,36 @@
 - [ ] Uses semantic HTML.
 
 ### Bonus (optional)
-{{ Add a short paragraph describing the features below, if you included any. }}
+I included hover states on my navigation menu, my hyperlinked project and bike blog images. I also used it on the buttons and the 'get in touch' article that appears as a button. I am looking forward to learning Javascript in upcoming modules.
+
 - [ ] Different styles for active, hover and focus states.
 - [ ] Include JavaScript to add some dynamic elements to your site. (Extratricky!)
 
 ### Screenshots
 > Please include the following:
-> - The different pages and features of your website on mobile, tablet anddesktop screen sizes (multiple screenshots per page and screen size).
+> - The different pages and features of your website on mobile, tablet and desktop screen sizes (multiple screenshots per page and screen size).
 > - The different features of your site, e.g. if you have hover states, take ascreenshot that shows that.
 >
-> You can do this by saving the images in a folder in your repo, and includingthem in your readme document with the following Markdown code:
+> You can do this by saving the images in a folder in your repo, and including them in your readme document with the following Markdown code:
 
-#### {{ image_title }}
+#### Resposivity Screenshots
 
-![ {{ Description of image }} ]( {{ ./relative_path_to_file }} )
+![ Screenshot of top portion of page using ResponsivelyApp - displaying mobile, tablet, laptop and desktop monitor screens]( images/responsive-1.png )
+
+![ Screenshot of middle portion of page using ResponsivelyApp - displaying mobile, tablet, laptop and desktop monitor screens]( images/responsive-2.png )
+
+![ Screenshot of lower portion of page using ResponsivelyApp - displaying mobile, tablet, laptop and desktop monitor screens]( images/responsive-3.png )
+
+![ Screenshot of contact page using ResponsivelyApp - displaying mobile, tablet, laptop and desktop monitor screens]( images/responsive-contact.png )
+
+#### Hover Screenshots
+
+![ Screenshot of navigation bar with hover state on 'bike blog']( images/hover-nav.png )
+
+![ Screenshot of 'Get in Touch' artcile in pre-hover state]( images/sans-hover-getintouch.png )
+
+![ Screenshot of 'Get in Touch' artcile in hover state]( images/hover-getintouch.png )
+
+![ Screenshot of Project image in pre-hover state]( images/sans-hover-project.png )
+
+![ Screenshot of Project image in hover state]( images/hover-project.png )
