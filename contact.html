@@ -21,7 +21,7 @@
                 <div id ="contact-box">
                     <h2> Got a question? </h2> <!-- adding the form again but as a table -->
                     <form id = "form">
-                        <table> <!--create a table-->
+                        <table id = "table"> <!--create a table-->
                             <tr> <!-- create a new table row -->
                                 <th class = "table-header">      
                                     <label for="yourname">Name</label>  <!-- name each of the table headings -->  
@@ -38,18 +38,17 @@
                                 </td> 
                                 
                                 <td id = "subject" rowspan="5" class = "table-input-cell"> 
-                                    <textarea id="textarea" name="subject" rows = "5"></textarea>    
-                                </td>
-                                
+                                    <textarea id="textarea" name="subject" rows = "9"></textarea>    
+                                </td>   
                             </tr>
                             <tr>
                                 <th class = "table-header">    
-                                    <label for="city">What's piqued your interest?</label>      <!-- name each of the table headings -->    
+                                    <label for="interest">What has piqued your interest?</label>      <!-- name each of the table headings -->    
                                 </th>
                             </tr>
                             <tr>
                                 <td class = "table-input-cell">  
-                                    <select id="city" name="city" class = "response"> 
+                                    <select id="interest" name="interest" class = "response"> 
                                         <option value="blank"></option>
                                         <option value="analytics">Analytics</option>
                                         <option value="bikes">Bikes</option>
@@ -57,6 +56,17 @@
                                         <option value="other">Other</option>                      
                                     </select>
                                 </td>
+                            </tr>
+                                <th class = "table-header">    
+                                    <label for="interest">Your Email</label>      <!-- name each of the table headings -->    
+                                </th>
+                            
+                              
+                                
+                            <tr>
+                                <td  class = "table-input-cell">  
+                                    <input type="text" id="yourname" name="yourname" class = "response">  <!--add the content of each cell in the new row-->                
+                                </td> 
                             </tr>
                         </table>
                         <input type="submit" value="Submit"> 

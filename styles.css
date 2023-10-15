@@ -285,7 +285,7 @@ footer p{
     background-color: var(--sand);
 }
 
-#contact h2{ color: var(--sand);
+#contact h2{ color: var(--darkblue);
 }
 
 form{
@@ -297,7 +297,7 @@ form{
 }
 
 /*Contact us Table Layout*/ 
-table{
+#table{
     width:100%;
 }
 .table-header{
@@ -424,16 +424,22 @@ input[type=text], select, textarea {
         max-height: 200px;
     }
       
-    form{
+    #form{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items:center;
         flex-wrap: wrap;
+        margin: auto;
     }
 
-    table{
+    #table{
         max-width:768px;
+        margin: auto;
+    }
+    #contact-box{
+        max-width:768px;
+        margin: auto;
     }
 }
 
