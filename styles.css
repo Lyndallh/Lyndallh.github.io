@@ -209,7 +209,7 @@ h3 {
 }
 /* styling shared by projets and blog */
 
-.section-text p{ 
+.section-text{ 
     margin:0 10px;
     padding:0 20px; 
     max-width: 850px;
@@ -217,8 +217,6 @@ h3 {
 
 
 h2{
-    margin-left: 10px;
-    padding-left: 20px;
     padding-top: 20px;
     color: var(--black);
     text-shadow: 0 0 15px var(--sand), 0 0 50px var(--black) ;
@@ -413,7 +411,7 @@ input[type=text], select, textarea {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
+        align-items: flex-end;
         min-height: fit-content;
         flex-wrap: wrap;
     }
@@ -458,7 +456,9 @@ input[type=text], select, textarea {
     .project, .blog-post{
         width: 15%;
     }
-
+    .project img, .blog-post img {
+        max-height: fit-content;
+    }
 }
 /* hero image break point */
 @media (min-width: 1370px) {   
