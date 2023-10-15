@@ -357,7 +357,7 @@ input[type=text], select, textarea {
 }
 
 /*Meda Queries*/
-@media (min-width: 769px) {    
+@media (min-width: 768px) {    
     nav {
         display: flex;
         flex-direction: row;
@@ -422,7 +422,7 @@ input[type=text], select, textarea {
     }
 
     table{
-        max-width:769px;
+        max-width:768px;
     }
 }
 
