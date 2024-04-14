@@ -165,6 +165,12 @@ section{
     
     text-shadow: 0 0 15px var(--black), 0 0 75px var(--sand);
 }
+#bio h1{ 
+    color: var(--black);
+    padding: 10px;
+    margin: auto;
+}
+
 #hero h2{ color: var(--sand);
     padding: 5px;
     margin: auto;
