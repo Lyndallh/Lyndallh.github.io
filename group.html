@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="styles.css">
+        <title>ABC - Lindi Harding</title>
+    </head>
+    <body>
+        <header>
+            <a href="/index.html" ><img id = logo src="images/ABC-logo.png"> </a>  <!-- Logo -->
+            <nav id="navigation"> <!-- Navigation -->
+                <a class="menu" href="/index.html#bio"><h5>About</h5></a>
+                <a class="menu" href="/index.html#blog"><h5>Bike Blog</h5></a>           
+                <a class="menu" href="/index.html#projects"><h5>Coding Projects</h5></a>
+                <a class="menu" href="/contact.html"><h5>Contact</h5></a>
+            </nav> 
+        </header>
+        <main>
+            <section id="bio">
+            <h1>Group Project - DiversiTech</h1>
+            <p>Our final project for the She Codes Plus program was to work in a team of 6 to create a web platform for a client that helped to connect people in tech who are typically underrepresented and usually find it difficult to find other 'people like them' to connect with.</p>
+            <br>
+            <p> We used Agile Methodology to plan, design, build and test the project. We also used the following tools to aid in our collaboration and project management:</p>
+                <br>
+                <ul>
+                    <li> Mural to design the user-stories and map out a basic database model </li>
+                    <li> Google Drive to collate and refine requirements gathering</li>
+                    <li> Trello to manage our tasks</li>
+                    <li> GitHub to collaborate our code </li>
+                    <li> Slack to communicate with each other </li>
+                    <li> Google Meet to host our stand up meetings </li>
+                    <li> Figma to design the wireframes and the final design of the app. </li>
+                    <li> React JS to create the front end </li>
+                    <li> Django REST Framework to create the back end.</li>
+                    <li> fly.io to deploy the back end </li>
+                    <li> Netlify to deploy the front end. </li>
+                    <li> Insomnia to test the API end points and back end server</li>
+                    <li> dbshell to run SQlite3 to run the commandline client to query and manage the deployed database</li>
+                </ul>
+                <br>
+            <a class = "project" href="https://main--diversitech.netlify.app/">
+                <h3>Deployed App</h3>
+                <img  src="images/diversiTech.png" alt = "screenshot of deployed project">
+            </a>
+
+            </section>
+            <section id="projects">
+                <div class = "section-text">
+                    <h2>Django Rest Framework - Back End</h2>
+                    <p>The back-end of the project used DRF to create a database and API server that receives GET, POST, PUT and DELETE API calls from our React JS front end app.</p>
+                    <br>
+                    <p>My main contribution to the back end of this project was in the design and administration of the database</p>
+                    <br>
+                    <p>Click on the image to view the GitHub repo for the back end, where you can read more about the project objectives, view screenshots of API end point testing in insomnia, you'll also be able to see the Entity Relationship Diagram and the API Specification documentation.</p>
+                </div>
+                <div id="projects-box"> 
+                    <a class = "project" href ="https://github.com/SheCodesAus/2024_a_dynamic_array_back_end">
+                        <h3>GitHub Repo</h3>
+                        <img  src="images/github.svg"  alt = "GitHub logo" >
+                    </a>
+                </div>
+            </section>
+            <section id="bio"></section>
+            <section id="projects">
+                <div class = "section-text">
+                    <h2>React JS - Front End</h2>
+                    <p>The client side app used React JS, HTML, CSS and JavaScript that sends GET, POST, PUT and DELETE API calls to our Django REST Framework back end server.</a></p>
+                    <br>
+                    <p>Users can create an account, create a profile, filter profiles by multiple selections, view a single profile and if they are logged in, they can obtain contact details to connect to the profile owner.</p>
+                    <br>
+                    <p>My main contrubution to the client side app was the filtering functionality. I also created the bones of the user sign-up, login and create profile forms</p>
+                    <br>
+                    <p>Click on the image to view the GitHub repo, where you can read more about the project objectives.</p>
+                </div>
+                <div id="projects-box"> 
+                    <a class = "project" href ="https://github.com/SheCodesAus/2024_a_dynamic_array_frontend">
+                        <h3>GitHub Repo</h3>
+                        <img  src="images/github.svg"  alt = "GitHub logo" >
+                    </a>
+                </div>
+            </section>
+
+
+        </main>
+        <footer>
+            <div id="socials-box">
+                <a class="socials" href="https://github.com/Lyndallh/Lyndallh.github.io" target="_blank"> 
+    
+                    <img src="images/github.png">
+    
+                </a>
+                <a class="socials" href="https://www.linkedin.com/in/lindi-harding-5280b445/" target="_blank"> 
+    
+                    <img src="images/linkedin.png">
+    
+                </a>
+            </div>
+            <p>Copyright - Lindi Harding 2024</p>
+        </footer>
+    </body>
+</html>

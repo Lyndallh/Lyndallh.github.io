@@ -20,6 +20,12 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 ol, ul {
     list-style: none;
 }
+ul {
+    padding-left: 0;
+    color: var(--black);
+    list-style: disc;
+    
+}
 
 img {
     max-width: 100%;
