@@ -1,0 +1,45 @@
+<textarea id="textarea" rows="60" cols="150">  
+can_land_big_jump = False
+attempted_big_jump = False
+all_practices = 0
+
+
+print("That big jump looks fun...BUT...\nUntil you have mastered small jumps, you shouldn't attempt big jumps")
+
+while attempted_big_jump == False: 
+    # Keep asking if are going to attempt the big jump until you have attempted the big jump
+    attempted_big_jump = input('Are you going to attempt the big jump now? y/n :\n').lower().strip() == 'y'
+    if attempted_big_jump == True:
+            break # jump has been attempted, no need to ask again
+    
+    # Jumping coach said to take it slow and practice - at least 50 times - before taking it to the next level
+    while all_practices in range (0,49):
+        print("You chose to do a practice session on a small jump")
+        num_practices = input("How many practice jumps did you do in this session? \n")
+        increment = int(num_practices)
+        all_practices = (increment+all_practices)
+        if all_practices < 50:
+            print(f"Good work {all_practices} small jumps down, another {50-all_practices} to go before you have mastered small jumps\n")
+            # But impatience...
+            attempted_big_jump = input('Are you going to attempt the big jump now? y/n :\n').lower().strip() == 'y'
+            if attempted_big_jump == True:
+                break  # Impatience monster has been fed
+
+    if all_practices >= 50: # coach will be pleased
+            print(f"Your total practice jumps are {all_practices}\nNow you're ready to try the big jump")
+            can_land_big_jump = True
+            
+if attempted_big_jump == True:
+    print(f"You ride fast toward the jump and since you have practiced {all_practices} times...\n....\n......\n.......")
+    # can_land_big_jump = input('Did you land the big jump? y/n :').lower().strip() == 'y'
+    if can_land_big_jump == True:
+            print("You did it, amazing! You are a rock star!\n\n\n")
+            print("Even though you are now a total legend, there is still another itch to scratch....")
+    elif can_land_big_jump == False:
+            print("Damn, you crashed hard - get to the chopper!\n\n\n")
+            print("During your stay in the hospital, the staff keep asking the same question... ")
+
+bikes_you_own = int(input("How many bikes do you own?\n"))
+bikes_you_should_own = bikes_you_own + 1
+print (f"Oh dear, the correct number of bikes to own is {bikes_you_should_own} bikes\n")
+    </textarea>
