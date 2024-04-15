@@ -10,11 +10,25 @@
         <header>
             <a href="/index.html" ><img id = logo src="images/ABC-logo.png"> </a>  <!-- Logo -->
             <nav id="navigation"> <!-- Navigation -->
-                <a class="menu" href="/index.html#bio"><h5>About</h5></a>
-                <a class="menu" href="/index.html#blog"><h5>Bike Blog</h5></a>           
-                <a class="menu" href="/index.html#projects"><h5>Coding Projects</h5></a>
-                <a class="menu" href="/contact.html"><h5>Contact</h5></a>
-            </nav> 
+                <div class="navbar">
+                    <a class="menu" href="#bio"><h5>About</h5></a>
+                    <a class="menu" href="#blog"><h5>Bike Blog</h5></a>           
+                    <div class="dropdown">
+                        <button class="dropbtn"><h5>Coding Projects</h5>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="/htmlcss.html"><h5>HTML/CSS</h5></a>
+                            <a href="/python.html"><h5>Python</h5></a>
+                            <a href="/DRF.html"><h5>Django Rest Framework</h5></a>
+                            <a href="/javascript.html"><h5>Vanilla JS</h5></a>
+                            <a href="/react.html"><h5>React JS</h5></a>
+                            <a href="/group.html"><h5>Group Project</h5></a>
+                        </div>
+                    </div>
+                    <a class="menu" href="/contact.html"><h5>Contact</h5></a> 
+                </div>
+                </nav> 
         </header>
         <main>      
             <section id = "contact">       
